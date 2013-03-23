@@ -129,8 +129,8 @@ h3.title { /* Comment title */
   margin: 0;
 }
 
-h1.title { /* PNK */
-  color: #6493AA;
+h1.title {
+  color: #268bd2;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -233,7 +233,7 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
-  color: #6493AA; /* PNK */
+  color: #eee8d5;
 }
 
 #footer a:link { /* PNK */
