@@ -80,7 +80,7 @@ regions[navigation]   = Navigation bar
 regions[highlighted]  = Highlighted
 regions[help]         = Help
 regions[content]      = Content
-regions[sidebar]      = Sidebar
+regions[right]        = Sidebar
 regions[footer]       = Footer
 regions[bottom]       = Page bottom
 

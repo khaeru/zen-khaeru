@@ -30,7 +30,7 @@
 #header,
 #content,
 #navigation,
-.region-sidebar,
+.region-sidebar-right,
 #footer {
   padding-left: 10px;
   padding-right: 10px;
@@ -98,7 +98,7 @@
   margin-right: -672px;
 }
 
-.sidebar .region-sidebar {
+.sidebar .region-sidebar-right {
   /* Span 1 column, starting in 3rd column from left. */
   float: left;
   width: 306px;
