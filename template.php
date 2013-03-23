@@ -129,7 +129,7 @@ function STARTERKIT_preprocess_maintenance_page(&$variables, $hook) {
  *   The name of the template being rendered ("html" in this case.)
  */
 /* -- Delete this line if you want to use this function */
-function khaeru_zen_preprocess_html(&$variables, $hook) {
+function zen_khaeru_preprocess_html(&$variables, $hook) {
   drupal_add_http_header('X-XRDS-Location',
     'https://paul.kishimoto.name/openid/index.php?q=xrds/khaeru');
   /* PNK: commented because MIME errors from Google API break HTTPS. Instead,
@@ -165,7 +165,7 @@ function STARTERKIT_preprocess_page(&$variables, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function */
-function khaeru_zen_preprocess_node(&$variables, $hook) {
+function zen_khaeru_preprocess_node(&$variables, $hook) {
   // PNK: don't show author information on posts
   if ($variables['display_submitted']) {
     $variables['submitted'] = $variables['pubdate'];
@@ -202,14 +202,20 @@ function STARTERKIT_preprocess_comment(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("region" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_region(&$variables, $hook) {
-  // Don't use Zen's region--sidebar.tpl.php template for sidebars.
-  //if (strpos($variables['region'], 'sidebar_') === 0) {
-  //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('region__sidebar'));
-  //}
+function zen_khaeru_preprocess_region(&$variables, $hook) {
+  // Sidebar regions get some extra classes and a common template suggestion.
+  if ($variables['region'] == 'sidebar') {
+    $variables['classes_array'][] = 'column';
+    $variables['classes_array'][] = 'sidebar';
+    // Allow a region-specific template to override Zen's region--sidebar.
+    array_unshift($variables['theme_hook_suggestions'], 'region__sidebar');
+  }
+  // Use a template with no wrapper for the content region.
+  elseif ($variables['region'] == 'content') {
+    // Allow a region-specific template to override Zen's region--no-wrapper.
+    array_unshift($variables['theme_hook_suggestions'], 'region__no_wrapper');
+  }
 }
-// */
 
 /**
  * Override or insert variables into the block templates.
