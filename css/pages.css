@@ -219,16 +219,6 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 /*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-
-.region-sidebar-second {
-}
-
-/*
  * Footer
  */
 

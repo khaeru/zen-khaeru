@@ -161,7 +161,7 @@
 
     <?php
       // Render the sidebars to see if there's anything in them.
-      $sidebar  = render($page['right']);
+      $sidebar  = render($page['sidebar_first']);
     ?>
 
     <?php if ($sidebar): ?>

@@ -202,20 +202,10 @@ function STARTERKIT_preprocess_comment(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("region" in this case.)
  */
-function zen_khaeru_preprocess_region(&$variables, $hook) {
-  // Sidebar regions get some extra classes and a common template suggestion.
-  if ($variables['region'] == 'sidebar') {
-    $variables['classes_array'][] = 'column';
-    $variables['classes_array'][] = 'sidebar';
-    // Allow a region-specific template to override Zen's region--sidebar.
-    array_unshift($variables['theme_hook_suggestions'], 'region__sidebar');
-  }
-  // Use a template with no wrapper for the content region.
-  elseif ($variables['region'] == 'content') {
-    // Allow a region-specific template to override Zen's region--no-wrapper.
-    array_unshift($variables['theme_hook_suggestions'], 'region__no_wrapper');
-  }
+/* -- Delete this line if you want to use this function
+function STARTERKIT_preprocess_region(&$variables, $hook) {
 }
+// */
 
 /**
  * Override or insert variables into the block templates.
@@ -239,7 +229,7 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
 // */
 
 /* From http://www.victheme.com/blog/drupal-7-tweaking-search-bar */
-function khaeru_zen_form_alter(&$form, &$form_state, $form_id) {
+function zen_khaeru_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
     $form['search_block_form']['#default_value'] = 'Search...';
     $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search...';}";
