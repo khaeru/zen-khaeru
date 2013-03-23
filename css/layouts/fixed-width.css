@@ -91,17 +91,17 @@
  */
 
 .sidebar #content {
-  /* Span 4 columns, starting in 1st column from left. */
+  /* Span 2 columns, starting in 1st column from left. */
   float: left;
-  width: 764px;
+  width: 632px;
   margin-left: 0px;
-  margin-right: -784px;
+  margin-right: -672px;
 }
 
 .sidebar .region-sidebar {
-  /* Span 1 column, starting in 5th column from left. */
+  /* Span 1 column, starting in 3rd column from left. */
   float: left;
-  width: 176px;
-  margin-left: 784px;
+  width: 306px;
+  margin-left: 672px;
   margin-right: -980px;
 }
