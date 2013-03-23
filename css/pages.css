@@ -15,13 +15,14 @@
 body {
   margin: 0;
   padding: 0;
-  /* PNK */
-  background: #295C74;
+  background: #fdf6e3;
 }
 
+/*
 #page {
   background: #42758D;
 }
+*/
 
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
