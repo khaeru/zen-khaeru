@@ -3,17 +3,8 @@
  * Block Styling
  */
 
-.sidebar .block { /* PNK */
-  background: #42697C;
-  color: #fff;
-}
-
-.sidebar a:visited { /* PNK */
-  color: #5b90aa;
-}
-
-.sidebar a:hover { /* PNK */
-  color: #fff;
+.sidebar .block {
+  background: #eee8d5;
 }
 
 .block { /* Block wrapper */
