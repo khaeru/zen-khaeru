@@ -47,6 +47,7 @@ body {
  */
 
 #header {
+  background-color: #eee8d5;
 }
 
 #logo { /* Wrapping link for logo */
@@ -69,7 +70,7 @@ body {
 }
 #site-name a:link,
 #site-name a:visited {
-  color: #6493AA; /* PNK */
+  color: #586e75;
   text-decoration: none;
 }
 #site-name a:hover,
@@ -80,8 +81,7 @@ body {
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1em;
-  /* PNK */
-  color: #fff;
+  color: #93a1a1;
   padding-left: 4em;
 }
 
@@ -101,7 +101,7 @@ body {
  */
 
 #content {
-  background: #fff;
+  color: #657b83;
 }
 
 .region-highlighted {
