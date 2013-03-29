@@ -166,8 +166,8 @@ function STARTERKIT_preprocess_page(&$variables, $hook) {
  */
 /* -- Delete this line if you want to use this function */
 function zen_khaeru_preprocess_node(&$variables, $hook) {
-  // PNK: don't show author information on posts
-  if ($variables['display_submitted']) {
+  // don't show author information on posts
+  if ($variables['submitted']) {
     $variables['submitted'] = $variables['pubdate'];
   }
 

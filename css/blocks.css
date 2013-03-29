@@ -107,3 +107,21 @@ h2.block-title { /* Block title */
 
 #block-user-online { /* "Who's online" block for a list of the online users */
 }
+
+.block .view-frontpage ul { /* 'Front page' view block */
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.field-name-body ul li,
+.block .view-frontpage ul li {
+  list-style-type: none;
+  padding-left: 1em;
+  text-indent: -1.2em;
+}
+
+.field-name-body ul li:before,
+.block .view-frontpage ul li:before {
+  content: '—';
+}
+

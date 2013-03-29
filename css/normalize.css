@@ -561,27 +561,6 @@ nav ol {
   list-style-image: none;
 }
 
-
-.block .view-frontpage .more-link a { /* PNK */
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.block .view-frontpage ul { /* PNK */
-  margin-top: 0;
-}
-
-.field-name-body ul li,
-.block .view-frontpage ul li { /* PNK */
-  list-style-type: none;
-}
-
-.field-name-body ul li:before,
-.block .view-frontpage ul li:before { /* PNK */
-  content: '—';
-}
-
 /* =============================================================================
    Embedded content
    ========================================================================== */
