@@ -8,7 +8,6 @@
 
 .block { /* Block wrapper */
   margin-bottom: 1.5em;
-  padding-right: 10px; /* PNK */
 }
 
 .block.first { /* The first block in the region */
@@ -24,9 +23,8 @@
 }
 
 h2.block-title { /* Block title */
-  color: #268bd2;
-  padding-left: 10px; /* PNK */
   border-bottom: 1px solid #657b83;
+  color: #268bd2;
 }
 
 #block-aggregator-category-1 { /* Block for the latest news items in the first category */
