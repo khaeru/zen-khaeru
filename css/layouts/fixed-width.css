@@ -20,7 +20,7 @@
    * this is the standards-compliant way to do that. */
   margin-left: auto;
   margin-right: auto;
-  width: 980px;
+  width: 960px;
 }
 
 /*
@@ -83,7 +83,7 @@
  */
 
 #content {
-  width: 980px;
+  width: 960px;
 }
 
 /*
@@ -93,15 +93,15 @@
 .sidebar-first #content {
   /* Span 2 columns, starting in 1st column from left. */
   float: left;
-  width: 632px;
+  width: 620px;
   margin-left: 0px;
-  margin-right: -672px;
+  margin-right: -640px;
 }
 
 .sidebar-first .region-sidebar-first {
   /* Span 1 column, starting in 3rd column from left. */
   float: left;
-  width: 306px;
-  margin-left: 672px;
-  margin-right: -980px;
+  width: 300px;
+  margin-left: 640px;
+  margin-right: -960px;
 }

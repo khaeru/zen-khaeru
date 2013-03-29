@@ -4,7 +4,6 @@
  */
 
 .sidebar .block {
-  background: #eee8d5;
 }
 
 .block { /* Block wrapper */
@@ -25,7 +24,9 @@
 }
 
 h2.block-title { /* Block title */
+  color: #268bd2;
   padding-left: 10px; /* PNK */
+  border-bottom: 1px solid #657b83;
 }
 
 #block-aggregator-category-1 { /* Block for the latest news items in the first category */
