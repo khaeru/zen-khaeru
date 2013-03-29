@@ -164,7 +164,6 @@ function STARTERKIT_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function */
 function zen_khaeru_preprocess_node(&$variables, $hook) {
   // don't show author information on posts
   if ($variables['submitted']) {
@@ -178,7 +177,6 @@ function zen_khaeru_preprocess_node(&$variables, $hook) {
     $function($variables, $hook);
   }
 }
-// */
 
 /**
  * Override or insert variables into the comment templates.

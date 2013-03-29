@@ -1,7 +1,7 @@
 ; The name, description and screenshot used for this theme on the Appearance
 ; page at admin/appearance.
 screenshot  = screenshot.png
-name        = Khaerukama'o (Zen)
+name        = Khaerukama-o (Zen)
 description = Theme for paul.kishimoto.name, based on 'Zen'.
 
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
