@@ -20,7 +20,8 @@
 }
 
 .node .submitted { /* The "posted by" information */
-  /* PNK */
+  color: #93a1a1;
+  font-size: 85%;
   margin-top: 0;
 }
 
